@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ 
+* {
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+ 
+/* --- Colors --- */
+ 
+:root {
+    --main: #FFCD29;
+    --main2: #ffcd2950;
+    --shade1: #F2F2F2;
+    --shade2: #F9F9F9;
+    --shade3: #f5f5f5;
+    --shadow: #0000000c;
+    --shadow2: #00000020;
+    --shadow3: #00000006;
+}
+ 
+#hl {
+    text-decoration: underline var(--main);
+}
+
+.hidden {
+    display: none;
+}
+ 
+/* --- Type Selectors --- */
+ 
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "inter", sans-serif;
+    background-color: var(--shade1);
+    transition: 300ms;
+}
+ 
+header {
+    display: inline;
+}
+ 
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+ 
+ul {
+    list-style: none;
+}
+
+p {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+main h1,
+footer h1 {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+/* --- CLASS/ID: Main Elements --- */
+
+.btn {
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+
+    width: fit-content;
+    height: fit-content;
+    margin-right: 0.5em;
+
+    padding: 0.3em 1em;
+    border: solid 1.5px var(--main);
+    border-radius: 1em;
+    color: black;
+    transition: 300ms;
+    background-color: #00000000;
+}
+ 
+.btn:hover {
+    color: white;
+    transition: 300ms;
+
+    background-color: var(--main);
+}
+
+/* --- Navigation Bar --- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+
+    top: 0;
+    padding: 1px 4em;
+
+    background-color: var(--shade2);
+    box-shadow: 0 15px 25px 0 var(--shadow);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+ 
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 2em;
+    margin-right: 8px;
+}
+
+/* --- Banner --- */
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 4em;
+    background-color: var(--shade2);
+    box-shadow: 0 8px 8px 0 var(--shadow1);
+}
+
+#banner h1 {
+    font-size: 3em;
+    transition: 300ms;
+}
+
+#banner h1 span:hover {
+    color: var(--main);
+    transition: 300ms;
+}
+
+#banner img {
+    height: 400px;
+}
+
+/* --- CLASS/ID: Features --- */
+
+#features {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 3em;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 8px 8px 0 var(--shadow);
+    border-radius: 5px;
+    width: 240px;
+ 
+    padding: 2em;
+    background-color: var(--shade2);
+    transition: 300ms;
+}
+
+.card img {
+    width: 40px;
+}
+
+.card h3 {
+    font-weight: 600;
+}
+
+.card:hover {   
+    width: 270px;
+    transition: 300ms;
+}
+
+/* --- Footer --- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 4em;
+    gap: 1.5rem;
+    width: 100%;
+
+    background-color: var(--shade2);
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .btn {
+    font-size: 1em;
+}
+
+#code {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    padding: 0;
+}
+
+#socials {
+    display: flex;
+    justify-content: flex-start;
+ 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+ 
+    padding: 0;
+}
+
+#socials img {
+    height: 1.8em;
+}
+
+/* --- Form Elements --- */
+
+label {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+form input {
+    outline: none;
+    width: 80%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border: solid 0;
+    border-radius: 5px;
+    background-color: var(--shadow);
+    transition: 300ms;
+}
+
+form input:hover,
+form input:focus {
+    background-color: var(--shadow3);
+    transition: 300ms;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    padding: 4em;
+    transition: 300ms;
+}
+
+.flexbox img {
+    width: 40px;
+}
+
+#left {
+    box-shadow: -3px 8px 8px 0 var(--shadow);
+    border-radius: 5px 0 0 5px;
+    width: 45%;
+ 
+    padding: 2em;
+    background-color: var(--shade2);
+}
+
+#right a:hover {
+    color: var(--main);
+    transition: 300ms;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    box-shadow: 3px 8px 8px 0 var(--shadow);
+    border-radius: 0 5px 5px 0;
+    width: 55%;
+ 
+    padding: 2em;
+    background-color: var(--shade2);
+}
+
+.sided {
+    display: flex;
+    align-items: baseline;
+    margin-top: 0.5em;
+    gap: 1em;
+    transition: 300ms;
+}
+
+#error {
+    margin-top: 0;
+    color: red;
+}
+
+/* --- dashboard --- */
+
+#dashboard .flexbox {
+    padding: 4em 4em 2em 4em;
+}
+
+#dashboard .flexbox img {
+    width: 2em;
+}
+
+#dashboard #left {
+    display: flex;
+    flex-direction: row;
+    overflow-wrap: anywhere;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+#dashboard #right {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: right;
+    align-items: center;
+}
+
+#dashboard #right a:hover {
+    color: white;
+}
+
+#notes {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 0 4em 4em 4em;
+}
+
+.note {
+    display: flex;
+    gap: 0.5em;
+    border-radius: 5px;
+
+    width: 368px;
+    max-height: 240px;
+    padding: 2em;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: space-between;
+    background-color: var(--shade3);
+    box-shadow: 0 8px 8px 0 var(--shadow);
+    transition: 300ms;
+}
+
+.note:hover {
+    background-color: var(--shade2);
+    transition: 300ms;
+}
+
+.note p,
+.note h2,
+.note a {
+    margin: 0;
+    transition: 300ms;
+}
+
+.note h2 {
+    text-transform: capitalize;
+}
+
+.note img {
+    width: 24px;
+}
+
+#nleft {
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    width: 90%;
+    gap: 1em;
+}
+
+#nright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    width: 10%;
+    padding-left: 1em;
+}
+
+#nright button {
+    outline: none;
+    background-color: #00000000;
+    border: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.view .note {
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    max-height: fit-content;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+}
+
+.view .note img {
+    width: 24px;
+}
+
+#dashboard textarea {
+    outline: none;
+    width: 100%;
+
+    font-size: 1em;
+    resize: vertical;
+    background-color: #00000000;
+    border: none;
+}
+
+#dashboard input {
+    outline: none;
+    padding: 0;
+    margin: 0;
+    
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #00000000;
+    border: none;
+}
+
+/* --- modal --- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    padding: 8em;
+
+    overflow: auto;
+    background-color: var(--shadow2);
+}
+
+.modal p {
+    margin: 0;
+}
+
+.modalbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2em;
+
+    background-color: var(--shade2);
+    box-shadow: 0 8px 8px 0 var(--shadow);
+}
+
+.modalclose {
+    float: right;
+    cursor: pointer;
+}
+
+#create input,
+#create textarea {
+    margin-bottom: 0.5em;
+}
+
+.modal #error {
+    margin: 0.5em 0;
+}
