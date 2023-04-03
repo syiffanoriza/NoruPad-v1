@@ -6,7 +6,7 @@ NoruPad is a note-taking web application concept coded with Laravel. This projec
 
 ## External Links
 
-- [Project Presentation Slides](https://www.canva.com/design/DAFce1X1bmQ/hoEo7Af01b_OBMYM0qcpoA/view?utm_content=DAFce1X1bmQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Project Presentation Slides](https://www.canva.com/design/DAFce1X1bmQ/rcX7bYxmMbk8UDEeGPzAgg/view?utm_content=DAFce1X1bmQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 - [Project Design](https://www.figma.com/file/WcbGFAftMYkhHOuGzLYmyx/Web-Preview?node-id=0-1)
 
 ## Special Thanks to
