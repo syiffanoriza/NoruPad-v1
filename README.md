@@ -11,4 +11,4 @@ NoruPad is a note-taking web application concept coded with Laravel. This projec
 
 ## Special Thanks to
 
-My dearest mentors, Ms. Nina, Ms. Dean, Ms. Ica, and Ms. Ratih for your guidance throughout my journey in learning web development, as well as my RPL friends for your contribution and support.
+My dearest mentors, Ms. Nina, Ms. Dean, Ms. Ica, and Ms. Ratih for your guidance throughout my journey in learning web development, as well as my RPL friends for your contribution and support. I hope you are all doing great.
