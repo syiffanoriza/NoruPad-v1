@@ -2,7 +2,7 @@
 
 ## About The Project
 
-NoruPad is a note-taking web application concept coded with Laravel. This project is made for my web dev class final project submission. 
+NoruPad is a note-taking web application concept, aimed to simplify user's experience in taking notes from the web. This project is made for my web dev class final project submission. 
 
 ## External Links
 
